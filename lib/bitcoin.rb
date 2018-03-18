@@ -621,7 +621,7 @@ module Bitcoin
   NETWORKS = {
     bitcoin: {
       project: :bitcoin,
-      magic_head: "\xF9\xBE\xB4\xD9",
+      magic_head: "\xE3\xE1\xF3\xE8",
       message_magic: "Bitcoin Signed Message:\n",
       address_version: "00",
       p2sh_version: "05",
@@ -680,7 +680,7 @@ module Bitcoin
   }
 
   NETWORKS[:testnet] = NETWORKS[:bitcoin].merge({
-      magic_head: "\xFA\xBF\xB5\xDA",
+      magic_head: "\xDA\xB5\xBF\xFA",
       address_version: "6f",
       p2sh_version: "c4",
       privkey_version: "ef",
@@ -706,7 +706,7 @@ module Bitcoin
     })
 
   NETWORKS[:testnet3] = NETWORKS[:testnet].merge({
-      magic_head: "\x0B\x11\x09\x07",
+      magic_head: "\xF4\xE5\xF3\xF4",
       no_difficulty: true, # no good. add right testnet3 difficulty calculation instead
       genesis_hash: "000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943",
       proof_of_work_limit: 0x1d00ffff,

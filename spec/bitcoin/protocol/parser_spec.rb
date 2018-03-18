@@ -10,7 +10,7 @@ describe 'Bitcoin::Protocol::Parser' do
 
   before {
     @pkt= [
-        "f9 be b4 d9", # magic head
+        "e3 e1 f3 e8", # magic head
         "69 6e 76 00 00 00 00 00 00 00 00 00", # command ("inv")
         "49 00 00 00", # message length
         "11 ea 1c 91", # checksum
